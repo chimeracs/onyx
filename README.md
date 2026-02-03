@@ -4,4 +4,6 @@ Hey, Welcome to the official Onyx V1 Repository. We are still adding many more e
 
 #Current Links:
 
-There are no current links for this project
+https://chromebook-utilities.pages.dev
+
+There are no other current links for this project
