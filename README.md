@@ -1,10 +1,7 @@
-# Chromebook Utilities Collection
-### A collection of exploits and tools for managed/enrolled Chromebooks.
-### Read the [Disclaimer](https://github.com/S-PScripts/chromebook-utilities/blob/main/Important/DISCLAIMER.md) before viewing this collection further.
----
-### Important Update:
-- This collection will no longer be updated (often) due to my lack of interest in it.
-- You can join Titanium Network for more links and exploits (.gg/unblock).
----
-### If you like this collection, make sure to star it!
-### Created by S-PScripts
+# Onyx
+
+Hey, Welcome to the official Onyx V1 Repository. We are still adding many more exploits and projects, feel free to fork or deploy. 
+
+#Current Links:
+
+There are no current links for this project
