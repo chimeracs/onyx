@@ -1,0 +1,121 @@
+/* =========================
+   STEALTH PRODUCT THEME
+   Colors: Black / Blue / Orange
+   ========================= */
+
+:root {
+  --bg-black: #050608;
+  --panel-black: #0b0f14;
+  --neon-blue: #00b3ff;
+  --neon-orange: #ff6a00;
+  --soft-blue: rgba(0, 179, 255, 0.15);
+  --soft-orange: rgba(255, 106, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, var(--soft-blue), transparent 40%),
+    radial-gradient(circle at bottom right, var(--soft-orange), transparent 45%),
+    linear-gradient(180deg, #020305, var(--bg-black));
+  color: #e6e6e6;
+  overflow-x: hidden;
+}
+
+/* Subtle animated glow */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 40%,
+      rgba(0, 179, 255, 0.08),
+      rgba(255, 106, 0, 0.08),
+      transparent 60%
+    );
+  animation: stealthGlow 8s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes stealthGlow {
+  0% { transform: translateX(-30%); }
+  100% { transform: translateX(30%); }
+}
+
+/* Main container */
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+}
+
+/* Product card / panel */
+.panel {
+  background: linear-gradient(
+    160deg,
+    rgba(0, 179, 255, 0.05),
+    rgba(255, 106, 0, 0.03),
+    var(--panel-black)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow:
+    0 0 20px rgba(0, 179, 255, 0.15),
+    0 0 35px rgba(255, 106, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h1, h2 {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px rgba(0, 179, 255, 0.6);
+}
+
+h2 {
+  color: var(--neon-orange);
+  text-shadow: 0 0 8px rgba(255, 106, 0, 0.5);
+}
+
+/* Accent line */
+.accent-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-orange));
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-orange));
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 12px rgba(0, 179, 255, 0.6),
+    0 0 18px rgba(255, 106, 0, 0.5);
+}
