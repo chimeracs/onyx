@@ -26,6 +26,15 @@
 
 <input placeholder="Enter URL" onkeydown="go(event)">
 <iframe id="frame"></iframe>
+<div class="browser-bar">
+  <select id="mode">
+    <option value="direct">Direct</option>
+    <option value="proxy">Proxy</option>
+  </select>
+
+  <input id="urlInput" placeholder="Enter URL">
+  <button onclick="navigate()">Go</button>
+</div>
 
 <script>
   function go(e) {
