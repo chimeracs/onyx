@@ -43,6 +43,39 @@ body {
   box-shadow: 0 0 25px rgba(0,179,255,0.3);
   overflow: hidden;
 }
+.browser-bar {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  background: #0b0f14;
+}
+
+.browser-bar input,
+.browser-bar select,
+.browser-bar button {
+  background: #050608;
+  border: 1px solid #ff6a00;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+}
+.browser-bar {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  background: #0b0f14;
+}
+
+.browser-bar input,
+.browser-bar select,
+.browser-bar button {
+  background: #050608;
+  border: 1px solid #ff6a00;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+}
+
 
 .window iframe {
   width: 100%;
