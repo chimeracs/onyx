@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0a1a25, #050608);
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+#desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(5,6,8,0.85);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+}
+
+.taskbar button {
+  background: linear-gradient(135deg, #00b3ff, #ff6a00);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* App windows */
+.window {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 10%;
+  left: 15%;
+  background: #0b0f14;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,179,255,0.3);
+  overflow: hidden;
+}
+
+.window iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
